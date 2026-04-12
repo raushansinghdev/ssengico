@@ -273,14 +273,14 @@ const GalleryItem = ({ item, idx, onClick, showExpandHint }: { item: (typeof GAL
 
 const WeldingSparkles = () => {
   const [sparks, setSparks] = useState<{ id: number; x: number; y: number; tx: number; ty: number }[]>([]);
-  
+
   const addSpark = useCallback((x: number, y: number) => {
     const id = Date.now() + Math.random();
     const angle = Math.random() * Math.PI * 2;
     const velocity = 50 + Math.random() * 100;
     const tx = Math.cos(angle) * velocity;
     const ty = Math.sin(angle) * velocity;
-    
+
     setSparks(prev => [...prev.slice(-15), { id, x, y, tx, ty }]);
     setTimeout(() => {
       setSparks(prev => prev.filter(s => s.id !== id));
@@ -288,7 +288,7 @@ const WeldingSparkles = () => {
   }, []);
 
   return (
-    <div 
+    <div
       style={{ position: 'absolute', inset: 0, zIndex: 1, cursor: 'crosshair' }}
       onMouseMove={(e) => {
         const rect = e.currentTarget.getBoundingClientRect();
@@ -296,14 +296,14 @@ const WeldingSparkles = () => {
       }}
     >
       {sparks.map(s => (
-        <div 
-          key={s.id} 
-          className="welding-spark" 
-          style={{ 
-            left: `${s.x}px`, 
-            top: `${s.y}px`, 
-            '--tx': `${s.tx}px`, 
-            '--ty': `${s.ty}px` 
+        <div
+          key={s.id}
+          className="welding-spark"
+          style={{
+            left: `${s.x}px`,
+            top: `${s.y}px`,
+            '--tx': `${s.tx}px`,
+            '--ty': `${s.ty}px`
           } as any}
         />
       ))}
@@ -520,7 +520,7 @@ export default function Home() {
       <nav className={`nav ${scrolled ? "scrolled" : ""}`}>
         <div className="logo-box">
           <div className="logo-sq">
-            <Image src="/images/logoWithoutBackground.png" alt="SS Logo" width={26} height={26} priority />
+            <Image src="/images/logo.png" alt="SS Logo" width={26} height={26} priority />
           </div>
           <div>
             <div className="logo-name">SS Furniture & Fabrication</div>
@@ -920,7 +920,7 @@ export default function Home() {
           <div className="footer-top">
             <div className="logo-box footer-logo">
               <div className="logo-sq logo-sq-small">
-                <Image src="/images/logoWithoutBackground.png" alt="SS Logo" width={22} height={22} />
+                <Image src="/images/logo.png" alt="SS Logo" width={22} height={22} />
               </div>
               <div>
                 <div className="logo-name">SS Furniture & Fabrication</div>
