@@ -3,6 +3,8 @@
 import Image from "next/image";
 import { useEffect, useState, useRef, useCallback } from "react";
 
+const BASE_PATH = "/ssengico";
+
 const SERVICES = [
   {
     icon: "🔧",
@@ -44,17 +46,17 @@ const STATS = [
 ];
 
 const GALLERY = [
-  { label: "Stainless Steel Gate", sub: "Residential & Commercial", bg: "#141a1f", span: "2", image: "/images/catalogImages/3.png" },
-  { label: "Stainless Steel Door", sub: "Premium Entrance", bg: "#1a1514", span: "1", image: "/images/catalogImages/4.png" },
-  { label: "Stainless Steel Window", sub: "Safety & Design", bg: "#14181a", span: "1", image: "/images/catalogImages/5.png" },
-  { label: "Staircase Railing", sub: "Durable Steel Railings", bg: "#1a1a14", span: "1", image: "/images/catalogImages/6.png" },
-  { label: "Balcony Railing", sub: "Modern Balcony Safety", bg: "#171a14", span: "1", image: "/images/catalogImages/7.png" },
-  { label: "Stainless Steel Bed", sub: "Customised Bed Frames", bg: "#1a1418", span: "2", image: "/images/catalogImages/8.png" },
-  { label: "Chair and Table", sub: "Office & Home Furniture", bg: "#141a1f", span: "1", image: "/images/catalogImages/9.png" },
-  { label: "Sofa and Jhula", sub: "Living & Outdoor Leisure", bg: "#1a1514", span: "1", image: "/images/catalogImages/10.png" },
-  { label: "Aluminium Door", sub: "Lightweight & Sturdy", bg: "#14181a", span: "1", image: "/images/catalogImages/11.png" },
-  { label: "Aluminium Window & Partition", sub: "Commercial Partitions", bg: "#1a1a14", span: "1", image: "/images/catalogImages/12.png" },
-  { label: "Customised Items", sub: "Shelves & Hangers", bg: "#171a14", span: "2", image: "/images/catalogImages/13.png" },
+  { label: "Stainless Steel Gate", sub: "Residential & Commercial", bg: "#141a1f", span: "2", image: BASE_PATH + "/images/catalogImages/3.png" },
+  { label: "Stainless Steel Door", sub: "Premium Entrance", bg: "#1a1514", span: "1", image: BASE_PATH + "/images/catalogImages/4.png" },
+  { label: "Stainless Steel Window", sub: "Safety & Design", bg: "#14181a", span: "1", image: BASE_PATH + "/images/catalogImages/5.png" },
+  { label: "Staircase Railing", sub: "Durable Steel Railings", bg: "#1a1a14", span: "1", image: BASE_PATH + "/images/catalogImages/6.png" },
+  { label: "Balcony Railing", sub: "Modern Balcony Safety", bg: "#171a14", span: "1", image: BASE_PATH + "/images/catalogImages/7.png" },
+  { label: "Stainless Steel Bed", sub: "Customised Bed Frames", bg: "#1a1418", span: "2", image: BASE_PATH + "/images/catalogImages/8.png" },
+  { label: "Chair and Table", sub: "Office & Home Furniture", bg: "#141a1f", span: "1", image: BASE_PATH + "/images/catalogImages/9.png" },
+  { label: "Sofa and Jhula", sub: "Living & Outdoor Leisure", bg: "#1a1514", span: "1", image: BASE_PATH + "/images/catalogImages/10.png" },
+  { label: "Aluminium Door", sub: "Lightweight & Sturdy", bg: "#14181a", span: "1", image: BASE_PATH + "/images/catalogImages/11.png" },
+  { label: "Aluminium Window & Partition", sub: "Commercial Partitions", bg: "#1a1a14", span: "1", image: BASE_PATH + "/images/catalogImages/12.png" },
+  { label: "Customised Items", sub: "Shelves & Hangers", bg: "#171a14", span: "2", image: BASE_PATH + "/images/catalogImages/13.png" },
 ];
 
 const WHY = [
@@ -479,8 +481,8 @@ export default function Home() {
             "@type": "LocalBusiness",
             "name": "SS Furniture & Fabrication",
             "alternateName": "SS Engineering Company",
-            "image": "https://ssengico.com/images/shopFront.jpg",
-            "url": "https://ssengico.com",
+            "image": "https://raushansinghdev.github.io/ssengico/images/shopFront.jpg",
+            "url": "https://raushansinghdev.github.io/ssengico",
             "telephone": "+917626881601",
             "priceRange": "$$",
             "address": {
@@ -520,7 +522,7 @@ export default function Home() {
       <nav className={`nav ${scrolled ? "scrolled" : ""}`}>
         <div className="logo-box">
           <div className="logo-sq">
-            <Image src="/images/logo.png" alt="SS Logo" width={26} height={26} priority />
+            <Image src={BASE_PATH + "/images/logo.png"} alt="SS Logo" width={26} height={26} priority />
           </div>
           <div>
             <div className="logo-name">SS Furniture & Fabrication</div>
@@ -575,7 +577,7 @@ export default function Home() {
       {/* ===== HERO ===== */}
       <section id="Home" className="hero">
         <div className="hero-image">
-          <Image src="/images/hero_background.png" alt="Shop front" fill sizes="100vw" style={{ objectFit: "cover" }} priority />
+          <Image src={BASE_PATH + "/images/hero_background.png"} alt="Shop front" fill sizes="100vw" style={{ objectFit: "cover" }} priority />
         </div>
         <div className="hero-overlay">
           <WeldingSparkles />
@@ -593,7 +595,7 @@ export default function Home() {
           </p>
           <div className="hero-btns">
             <a
-              href="/catalog.pdf"
+              href={BASE_PATH + "/catalog.pdf"}
               target="_blank"
               rel="noreferrer"
               className="btn-primary ripple-container"
@@ -667,7 +669,7 @@ export default function Home() {
 
             <AnimatedSection direction="right">
               <div className="owner-card-modern">
-                <Image src="/images/owner.png" alt="Sunil Singh - Founder" fill sizes="(max-width: 980px) 100vw, 50vw" style={{ objectFit: 'cover' }} className="owner-full-img" />
+                <Image src={BASE_PATH + "/images/owner.png"} alt="Sunil Singh - Founder" fill sizes="(max-width: 980px) 100vw, 50vw" style={{ objectFit: 'cover' }} className="owner-full-img" />
                 <div className="owner-glass-overlay">
                   <p className="owner-quote-modern">&quot;Our goal is to provide high-quality materials at affordable prices. Your satisfaction means a lot to us, and we carefully craft every item to perfection.&quot;</p>
                   <div className="owner-meta-modern">
@@ -787,7 +789,7 @@ export default function Home() {
                     <h3>SS Furniture & Fabrication</h3>
                     <p>A unit of SS Engineering Company</p>
                   </div>
-                  <a className="catalog-card" href="/catalog.pdf" target="_blank" rel="noreferrer">
+                  <a className="catalog-card" href={BASE_PATH + "/catalog.pdf"} target="_blank" rel="noreferrer">
                     <div>
                       <span className="catalog-label">Download Catalog</span>
                       <p>View our product portfolio, fabrication samples, and material guides.</p>
@@ -920,7 +922,7 @@ export default function Home() {
           <div className="footer-top">
             <div className="logo-box footer-logo">
               <div className="logo-sq logo-sq-small">
-                <Image src="/images/logo.png" alt="SS Logo" width={22} height={22} />
+                <Image src={BASE_PATH + "/images/logo.png"} alt="SS Logo" width={22} height={22} />
               </div>
               <div>
                 <div className="logo-name">SS Furniture & Fabrication</div>

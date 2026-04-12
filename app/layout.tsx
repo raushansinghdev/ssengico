@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   description: "SS Furniture & Fabrication (A Unit of SS Engineering Company) provides premium metal and wood fabrication services in Piro, Bihar. High-quality steel gates, iron works, and modern modular interiors.",
   keywords: ["Steel Fabrication Bihar", "Metal Work India", "Piro Bihar Fabrication", "SS Engineering Company", "Iron Grills Bihar", "Aluminium Windows Bihar", "Modular Kitchen Piro", "Custom Furniture Bihar"],
   icons: {
-    icon: "/images/logo.png",
+    icon: "/ssengico/images/logo.png",
   },
   openGraph: {
     title: "SS Fabrication | Premium Metal & Wood Solutions in Bihar",
