@@ -46,17 +46,17 @@ const STATS = [
 ];
 
 const GALLERY = [
-  { label: "Stainless Steel Gate", sub: "Residential & Commercial", bg: "#141a1f", span: "2", image: BASE_PATH + "/images/catalogImages/3.png" },
-  { label: "Stainless Steel Door", sub: "Premium Entrance", bg: "#1a1514", span: "1", image: BASE_PATH + "/images/catalogImages/4.png" },
-  { label: "Stainless Steel Window", sub: "Safety & Design", bg: "#14181a", span: "1", image: BASE_PATH + "/images/catalogImages/5.png" },
-  { label: "Staircase Railing", sub: "Durable Steel Railings", bg: "#1a1a14", span: "1", image: BASE_PATH + "/images/catalogImages/6.png" },
-  { label: "Balcony Railing", sub: "Modern Balcony Safety", bg: "#171a14", span: "1", image: BASE_PATH + "/images/catalogImages/7.png" },
-  { label: "Stainless Steel Bed", sub: "Customised Bed Frames", bg: "#1a1418", span: "2", image: BASE_PATH + "/images/catalogImages/8.png" },
-  { label: "Chair and Table", sub: "Office & Home Furniture", bg: "#141a1f", span: "1", image: BASE_PATH + "/images/catalogImages/9.png" },
-  { label: "Sofa and Jhula", sub: "Living & Outdoor Leisure", bg: "#1a1514", span: "1", image: BASE_PATH + "/images/catalogImages/10.png" },
-  { label: "Aluminium Door", sub: "Lightweight & Sturdy", bg: "#14181a", span: "1", image: BASE_PATH + "/images/catalogImages/11.png" },
-  { label: "Aluminium Window & Partition", sub: "Commercial Partitions", bg: "#1a1a14", span: "1", image: BASE_PATH + "/images/catalogImages/12.png" },
-  { label: "Customised Items", sub: "Shelves & Hangers", bg: "#171a14", span: "2", image: BASE_PATH + "/images/catalogImages/13.png" },
+  { label: "Stainless Steel Gate", sub: "Residential & Commercial", bg: "#141a1f", span: "2", image: BASE_PATH + "/images/catalogImages/3.jpg" },
+  { label: "Stainless Steel Door", sub: "Premium Entrance", bg: "#1a1514", span: "1", image: BASE_PATH + "/images/catalogImages/4.jpg" },
+  { label: "Stainless Steel Window", sub: "Safety & Design", bg: "#14181a", span: "1", image: BASE_PATH + "/images/catalogImages/5.jpg" },
+  { label: "Staircase Railing", sub: "Durable Steel Railings", bg: "#1a1a14", span: "1", image: BASE_PATH + "/images/catalogImages/6.jpg" },
+  { label: "Balcony Railing", sub: "Modern Balcony Safety", bg: "#171a14", span: "1", image: BASE_PATH + "/images/catalogImages/7.jpg" },
+  { label: "Stainless Steel Bed", sub: "Customised Bed Frames", bg: "#1a1418", span: "2", image: BASE_PATH + "/images/catalogImages/8.jpg" },
+  { label: "Chair and Table", sub: "Office & Home Furniture", bg: "#141a1f", span: "1", image: BASE_PATH + "/images/catalogImages/9.jpg" },
+  { label: "Sofa and Jhula", sub: "Living & Outdoor Leisure", bg: "#1a1514", span: "1", image: BASE_PATH + "/images/catalogImages/10.jpg" },
+  { label: "Aluminium Door", sub: "Lightweight & Sturdy", bg: "#14181a", span: "1", image: BASE_PATH + "/images/catalogImages/11.jpg" },
+  { label: "Aluminium Window & Partition", sub: "Commercial Partitions", bg: "#1a1a14", span: "1", image: BASE_PATH + "/images/catalogImages/12.jpg" },
+  { label: "Customised Items", sub: "Shelves & Hangers", bg: "#171a14", span: "2", image: BASE_PATH + "/images/catalogImages/13.jpg" },
 ];
 
 const WHY = [
@@ -577,7 +577,7 @@ export default function Home() {
       {/* ===== HERO ===== */}
       <section id="Home" className="hero">
         <div className="hero-image">
-          <Image src={BASE_PATH + "/images/hero_background.png"} alt="Shop front" fill sizes="100vw" style={{ objectFit: "cover" }} priority />
+          <Image src={BASE_PATH + "/images/hero_background.jpg"} alt="Shop front" fill sizes="100vw" style={{ objectFit: "cover" }} priority />
         </div>
         <div className="hero-overlay">
           <WeldingSparkles />
