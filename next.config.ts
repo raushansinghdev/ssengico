@@ -1,17 +1,10 @@
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
+const nextConfig: any = {
   output: 'export',
-  distDir: 'out',
+  trailingSlash: true,
   images: {
     unoptimized: true,
-  },
-  // Ensure build context is clean for CI
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  typescript: {
-    ignoreBuildErrors: true,
   },
 };
 
