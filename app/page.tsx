@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useEffect, useState, useRef, useCallback } from "react";
 
-const BASE_PATH = "/ssengico";
+const BASE_PATH = "";
 
 const SERVICES = [
   {
@@ -472,22 +472,30 @@ export default function Home() {
 
   return (
     <>
-      {/* JSON-LD Local Business Schema for SEO */}
+      {/* ─── LocalBusiness JSON-LD Schema ─── */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "LocalBusiness",
+            "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
             "name": "SS Furniture & Fabrication",
-            "alternateName": "SS Engineering Company",
-            "image": "https://raushansinghdev.github.io/ssengico/images/shopFront.jpg",
-            "url": "https://raushansinghdev.github.io/ssengico",
+            "alternateName": ["SS Engineering Company", "SS Engico", "ssengico"],
+            "description": "Premium steel, iron, aluminium and wood fabrication in Piro, Ara, Bhojpur, Bihar. Custom gates, grills, doors, windows, railings, furniture and commercial interiors.",
+            "image": [
+              "https://ssengico.com/images/shopFront.jpg",
+              "https://ssengico.com/images/logo.png"
+            ],
+            "logo": "https://ssengico.com/images/logo.png",
+            "url": "https://ssengico.com",
             "telephone": "+917626881601",
+            "email": "info@ssengico.com",
             "priceRange": "$$",
+            "currenciesAccepted": "INR",
+            "paymentAccepted": "Cash, Bank Transfer, UPI",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "Ara - Sasaram Rd, near Banaras Hospital, Piro",
+              "streetAddress": "Ara - Sasaram Road, near Banaras Hospital, Piro",
               "addressLocality": "Piro",
               "addressRegion": "Bihar",
               "postalCode": "802207",
@@ -495,24 +503,108 @@ export default function Home() {
             },
             "geo": {
               "@type": "GeoCoordinates",
-              "latitude": 25.33,
-              "longitude": 84.41
+              "latitude": 25.3208544,
+              "longitude": 84.3987333
             },
-            "openingHoursSpecification": {
-              "@type": "OpeningHoursSpecification",
-              "dayOfWeek": [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday"
-              ],
-              "opens": "09:00",
-              "closes": "19:00"
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday", "Tuesday", "Wednesday", "Thursday",
+                  "Friday", "Saturday", "Sunday"
+                ],
+                "opens": "09:00",
+                "closes": "19:00"
+              }
+            ],
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "bestRating": "5",
+              "worstRating": "1",
+              "reviewCount": "50"
+            },
+            "areaServed": [
+              { "@type": "City", "name": "Piro", "containedInPlace": { "@type": "State", "name": "Bihar" } },
+              { "@type": "City", "name": "Ara", "containedInPlace": { "@type": "State", "name": "Bihar" } },
+              { "@type": "City", "name": "Bhojpur", "containedInPlace": { "@type": "State", "name": "Bihar" } },
+              { "@type": "City", "name": "Patna", "containedInPlace": { "@type": "State", "name": "Bihar" } },
+              { "@type": "City", "name": "Buxar", "containedInPlace": { "@type": "State", "name": "Bihar" } },
+              { "@type": "City", "name": "Sasaram", "containedInPlace": { "@type": "State", "name": "Bihar" } },
+              { "@type": "City", "name": "Aurangabad", "containedInPlace": { "@type": "State", "name": "Bihar" } },
+              { "@type": "City", "name": "Gaya", "containedInPlace": { "@type": "State", "name": "Bihar" } },
+              { "@type": "City", "name": "Rohtas", "containedInPlace": { "@type": "State", "name": "Bihar" } },
+              { "@type": "City", "name": "Nawada", "containedInPlace": { "@type": "State", "name": "Bihar" } },
+              { "@type": "City", "name": "Nalanda", "containedInPlace": { "@type": "State", "name": "Bihar" } },
+              { "@type": "City", "name": "Jehanabad", "containedInPlace": { "@type": "State", "name": "Bihar" } },
+              { "@type": "City", "name": "Arwal", "containedInPlace": { "@type": "State", "name": "Bihar" } },
+              { "@type": "City", "name": "Kaimur", "containedInPlace": { "@type": "State", "name": "Bihar" } },
+              { "@type": "City", "name": "Saran", "containedInPlace": { "@type": "State", "name": "Bihar" } }
+            ],
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Fabrication & Furniture Services",
+              "itemListElement": [
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Steel Fabrication", "description": "Custom structural steel gates, frames, beams, trusses and industrial components in Bihar" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Iron Works", "description": "Decorative and functional iron grills, gates, window guards, railings and artistic ironwork in Bihar" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Aluminium Fabrication", "description": "Lightweight durable aluminium doors, windows, partitions, cladding in Piro, Ara, Bihar" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ply & Wood Work", "description": "Premium plywood furniture, modular cabinets, false ceilings and interior woodwork in Bihar" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom Furniture", "description": "Bespoke furniture combining metal and wood craftsmanship for Bihar homes and offices" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Commercial Interiors", "description": "End-to-end fabrication for offices, showrooms and commercial establishments in Bihar" } }
+              ]
+            },
+            "parentOrganization": {
+              "@type": "Organization",
+              "name": "SS Engineering Company",
+              "url": "https://ssengico.com"
             },
             "sameAs": [
+              "https://maps.app.goo.gl/xZzRxWeuHhq1A8Ah9",
+              "https://share.google/QNj6ScQE3Yeo5C7K0",
               "https://wa.me/917626881601"
+            ]
+          })
+        }}
+      />
+
+      {/* ─── FAQ JSON-LD Schema (triggers rich snippets in Google) ─── */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Where is SS Furniture & Fabrication located?",
+                "acceptedAnswer": { "@type": "Answer", "text": "SS Furniture & Fabrication is located on Ara - Sasaram Road, near Banaras Hospital, Piro, Bhojpur, Bihar 802207. We serve clients across Ara, Patna, Buxar, Sasaram, Rohtas, Gaya and all of Bihar." }
+              },
+              {
+                "@type": "Question",
+                "name": "What fabrication services do you offer in Bihar?",
+                "acceptedAnswer": { "@type": "Answer", "text": "We offer steel fabrication, iron grills and gates, aluminium doors and windows, plywood and modular furniture, custom furniture, and complete commercial interior fabrication. All work is done in-house at our Piro, Bihar workshop." }
+              },
+              {
+                "@type": "Question",
+                "name": "What are your business hours?",
+                "acceptedAnswer": { "@type": "Answer", "text": "We are open every day including Sundays from 9:00 AM to 7:00 PM. Call us at +91 76268 81601 or WhatsApp for a quick response." }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you take custom orders for steel gates and iron grills in Bihar?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Yes! We specialise in fully custom fabrication. Whether you need a decorative iron grill, a heavy steel gate, an aluminium window, or bespoke modular furniture — we design and manufacture to your exact specifications." }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you provide services outside Piro, such as in Patna or Ara?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Yes, we serve clients across Bihar including Ara, Patna, Bhojpur, Buxar, Sasaram, Rohtas, Aurangabad, Gaya, Nawada, Nalanda and surrounding districts. Contact us to discuss delivery and installation options." }
+              },
+              {
+                "@type": "Question",
+                "name": "How do I get a quote for fabrication work?",
+                "acceptedAnswer": { "@type": "Answer", "text": "You can get a free quote by calling +91 76268 81601, sending a WhatsApp message, emailing info@ssengico.com, or filling the contact form on our website at ssengico.com." }
+              }
             ]
           })
         }}
@@ -522,7 +614,7 @@ export default function Home() {
       <nav className={`nav ${scrolled ? "scrolled" : ""}`}>
         <div className="logo-box">
           <div className="logo-sq">
-            <Image src={BASE_PATH + "/images/logo.png"} alt="SS Logo" width={26} height={26} priority />
+            <Image src={BASE_PATH + "/images/logowb.png"} alt="SS Logo" width={34} height={34} priority />
           </div>
           <div>
             <div className="logo-name">SS Furniture & Fabrication</div>
@@ -595,14 +687,14 @@ export default function Home() {
           </p>
           <div className="hero-btns">
             <a
-              href={BASE_PATH + "/catalog.pdf"}
+              href={"https://drive.google.com/file/d/17mKTfb0nxba1LWiYMrYjPlU5XtQgpaLc/view?usp=sharing"}
               target="_blank"
               rel="noreferrer"
               className="btn-primary ripple-container"
               style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none', minHeight: '48px' }}
               onClick={(e) => createRipple(e)}
             >
-              Download Catalog
+              View Catalog
             </a>
             <button
               className="btn-outline ripple-container"
@@ -652,7 +744,7 @@ export default function Home() {
                   SS Furniture & Fabrication is an industrial arm of SS Engineering Company, delivering full-service metal and wood solutions for clients in Piro, Bihar and across India.
                 </p>
                 <p className="about-copy" style={{ color: "#888", fontSize: "15px", lineHeight: "1.8", marginBottom: "40px" }}>
-                  With over 2+ years of hands-on experience, our skilled craftsmen blend traditional techniques with modern machinery — delivering work that stands the test of time, on schedule and within budget.
+                  Founded in 2024, our workshop combines fresh energy with deep-rooted expertise. Our team is led by a veteran with over 25 years of fabrication experience at India&apos;s leading industrial giants, ensuring every project meets world-class standards.
                 </p>
 
                 <div className="about-tags" style={{ display: "flex", flexWrap: "wrap", gap: "12px" }}>
@@ -670,11 +762,18 @@ export default function Home() {
             <AnimatedSection direction="right">
               <div className="owner-card-modern">
                 <Image src={BASE_PATH + "/images/owner.png"} alt="Sunil Singh - Founder" fill sizes="(max-width: 980px) 100vw, 50vw" style={{ objectFit: 'cover' }} className="owner-full-img" />
+
+                {/* Accent corner */}
+                <div className="owner-corner-accent" />
+
+                {/* Bottom glass strip */}
                 <div className="owner-glass-overlay">
-                  <p className="owner-quote-modern">&quot;Our goal is to provide high-quality materials at affordable prices. Your satisfaction means a lot to us, and we carefully craft every item to perfection.&quot;</p>
-                  <div className="owner-meta-modern">
-                    <strong>Sunil Singh</strong>
-                    <span>Founder & Lead Fabricator</span>
+                  <div className="owner-bottom-content">
+                    <div className="owner-meta-modern">
+                      <strong>Sunil Singh</strong>
+                      <span>Founder &amp; Lead Fabricator</span>
+                    </div>
+                    <p className="owner-quote-modern">&quot;We carefully craft every item to perfection — your satisfaction is our mission.&quot;</p>
                   </div>
                 </div>
               </div>
@@ -865,8 +964,6 @@ export default function Home() {
                 ) : (
                   <>
                     <div className="form-header">
-                      <h3>Send Us a Message</h3>
-                      <p>We&apos;ll respond within one business day.</p>
                     </div>
                     <div className="form-grid">
                       <div className="form-group">
@@ -922,7 +1019,7 @@ export default function Home() {
           <div className="footer-top">
             <div className="logo-box footer-logo">
               <div className="logo-sq logo-sq-small">
-                <Image src={BASE_PATH + "/images/logo.png"} alt="SS Logo" width={22} height={22} />
+                <Image src={BASE_PATH + "/images/logowb.png"} alt="SS Logo" width={28} height={28} />
               </div>
               <div>
                 <div className="logo-name">SS Furniture & Fabrication</div>
@@ -937,8 +1034,22 @@ export default function Home() {
               ))}
             </div>
           </div>
+          {/* Service Areas — local SEO strip */}
+          <div className="footer-service-areas">
+            <div className="footer-areas-label">We serve across Bihar:</div>
+            <div className="footer-areas-list">
+              {[
+                "Piro", "Ara", "Bhojpur", "Patna", "Buxar", "Sasaram",
+                "Rohtas", "Aurangabad", "Gaya", "Nawada", "Nalanda",
+                "Jehanabad", "Arwal", "Kaimur", "Saran", "Jagdishpur",
+                "Koilwar", "Bikram", "Danapur", "Maner"
+              ].map((city) => (
+                <span key={city} className="footer-area-tag">{city}</span>
+              ))}
+            </div>
+          </div>
           <div className="footer-bottom">
-            <div className="footer-copy">© 2026 <span>SS Engineering Company</span>. All rights reserved.</div>
+            <div className="footer-copy">© 2026 <span>SS Engineering Company</span>. All rights reserved. | <a href="https://ssengico.com" style={{ color: "#ff6b00", textDecoration: "none" }}>ssengico.com</a></div>
           </div>
         </div>
       </footer>
@@ -949,7 +1060,8 @@ export default function Home() {
         className="wa-sticky"
         target="_blank"
         rel="noopener noreferrer"
-        title="Chat on WhatsApp"
+        title="Chat on WhatsApp — SS Furniture & Fabrication, Piro Bihar"
+        aria-label="Chat on WhatsApp with SS Furniture & Fabrication"
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
           <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 1.83 6.372L0 24l5.803-1.688A11.9 11.9 0 0 0 11.944 24c6.627 0 12-5.373 12-12s-5.373-12-12-12zm.056 20.04a9.96 9.96 0 0 1-5.088-1.39l-.365-.215-3.774 1.096 1.01-3.666-.237-.374a9.92 9.92 0 0 1-1.546-5.45C2 4.515 6.516 0 12 0s10 4.515 10 10.04-4.484 10-10 10zm5.498-7.514c-.302-.15-1.782-.876-2.057-.977-.275-.101-.476-.15-.676.15-.201.301-.778.977-.954 1.178-.175.201-.35.226-.652.075-.302-.15-1.274-.468-2.428-1.496-.898-.801-1.503-1.79-1.678-2.091-.176-.301-.019-.464.132-.614.135-.135.302-.351.452-.527.151-.176.201-.301.302-.502.1-.201.05-.376-.025-.527-.075-.15-.676-1.62-.927-2.217-.245-.583-.494-.504-.676-.513-.175-.01-.376-.01-.576-.01s-.527.075-.803.376c-.275.301-1.053 1.028-1.053 2.508s1.078 2.91 1.228 3.111c.15.2 2.126 3.245 5.15 4.542.72.308 1.28.492 1.718.63.722.228 1.38.196 1.895.119.578-.087 1.782-.727 2.033-1.43.25-.702.25-1.304.175-1.43-.075-.125-.276-.2-.578-.35z" />

@@ -1,0 +1,35 @@
+{
+  "name": "SS Furniture & Fabrication",
+  "short_name": "SS Engico",
+  "description": "Premium steel, iron, aluminium and wood fabrication in Piro, Ara, Bihar. Custom gates, grills, doors, windows, railings and furniture.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#070909",
+  "background_color": "#070909",
+  "lang": "en-IN",
+  "icons": [
+    {
+      "src": "/images/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": ["business", "shopping"],
+  "screenshots": [
+    {
+      "src": "/images/hero_background.jpg",
+      "type": "image/jpeg",
+      "sizes": "1280x720",
+      "label": "SS Furniture & Fabrication — Steel and Aluminium Work in Bihar"
+    }
+  ]
+}
