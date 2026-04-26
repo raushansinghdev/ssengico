@@ -479,7 +479,7 @@ export default function Home() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
-            "name": "SS Furniture & Fabrication",
+            "name": "SS Fabrication",
             "alternateName": ["SS Engineering Company", "SS Engico", "ssengico"],
             "description": "Premium steel, iron, aluminium and wood fabrication in Piro, Ara, Bhojpur, Bihar. Custom gates, grills, doors, windows, railings, furniture and commercial interiors.",
             "image": [
@@ -577,8 +577,8 @@ export default function Home() {
             "mainEntity": [
               {
                 "@type": "Question",
-                "name": "Where is SS Furniture & Fabrication located?",
-                "acceptedAnswer": { "@type": "Answer", "text": "SS Furniture & Fabrication is located on Ara - Sasaram Road, near Banaras Hospital, Piro, Bhojpur, Bihar 802207. We serve clients across Ara, Patna, Buxar, Sasaram, Rohtas, Gaya and all of Bihar." }
+                "name": "Where is SS Fabrication located?",
+                "acceptedAnswer": { "@type": "Answer", "text": "SS Fabrication is located on Ara - Sasaram Road, near Banaras Hospital, Piro, Bhojpur, Bihar 802207. We serve clients across Ara, Patna, Buxar, Sasaram, Rohtas, Gaya and all of Bihar." }
               },
               {
                 "@type": "Question",
@@ -617,7 +617,7 @@ export default function Home() {
             <Image src={BASE_PATH + "/images/logowb.png"} alt="SS Logo" width={34} height={34} priority />
           </div>
           <div>
-            <div className="logo-name">SS Furniture & Fabrication</div>
+            <div className="logo-name">SS Fabrication</div>
             <div className="logo-sub">A Unit of SS Engineering Company</div>
           </div>
         </div>
@@ -741,7 +741,7 @@ export default function Home() {
                 <div style={{ width: "40px", height: "3px", backgroundColor: "#ff6b00", marginBottom: "32px" }}></div>
 
                 <p className="about-copy" style={{ color: "#888", fontSize: "15px", lineHeight: "1.8", marginBottom: "24px" }}>
-                  SS Furniture & Fabrication is an industrial arm of SS Engineering Company, delivering full-service metal and wood solutions for clients in Piro, Bihar and across India.
+                  SS Fabrication is an industrial arm of SS Engineering Company, delivering full-service metal and wood solutions for clients in Piro, Bihar and across India.
                 </p>
                 <p className="about-copy" style={{ color: "#888", fontSize: "15px", lineHeight: "1.8", marginBottom: "40px" }}>
                   Founded in 2024, our workshop combines fresh energy with deep-rooted expertise. Our team is led by a veteran with over 25 years of fabrication experience at India&apos;s leading industrial giants, ensuring every project meets world-class standards.
@@ -913,7 +913,7 @@ export default function Home() {
                       allowFullScreen={false}
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
-                      title="SS Furniture & Fabrication Location"
+                      title="SS Fabrication Location"
                     />
                   </div>
                   <div className="map-overlay-info">
@@ -1022,7 +1022,7 @@ export default function Home() {
                 <Image src={BASE_PATH + "/images/logowb.png"} alt="SS Logo" width={28} height={28} />
               </div>
               <div>
-                <div className="logo-name">SS Furniture & Fabrication</div>
+                <div className="logo-name">SS Fabrication</div>
                 <div className="logo-sub">A Unit of SS Engineering Company</div>
               </div>
             </div>
@@ -1060,8 +1060,8 @@ export default function Home() {
         className="wa-sticky"
         target="_blank"
         rel="noopener noreferrer"
-        title="Chat on WhatsApp — SS Furniture & Fabrication, Piro Bihar"
-        aria-label="Chat on WhatsApp with SS Furniture & Fabrication"
+        title="Chat on WhatsApp — SS Fabrication, Piro Bihar"
+        aria-label="Chat on WhatsApp with SS Fabrication"
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
           <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 1.83 6.372L0 24l5.803-1.688A11.9 11.9 0 0 0 11.944 24c6.627 0 12-5.373 12-12s-5.373-12-12-12zm.056 20.04a9.96 9.96 0 0 1-5.088-1.39l-.365-.215-3.774 1.096 1.01-3.666-.237-.374a9.92 9.92 0 0 1-1.546-5.45C2 4.515 6.516 0 12 0s10 4.515 10 10.04-4.484 10-10 10zm5.498-7.514c-.302-.15-1.782-.876-2.057-.977-.275-.101-.476-.15-.676.15-.201.301-.778.977-.954 1.178-.175.201-.35.226-.652.075-.302-.15-1.274-.468-2.428-1.496-.898-.801-1.503-1.79-1.678-2.091-.176-.301-.019-.464.132-.614.135-.135.302-.351.452-.527.151-.176.201-.301.302-.502.1-.201.05-.376-.025-.527-.075-.15-.676-1.62-.927-2.217-.245-.583-.494-.504-.676-.513-.175-.01-.376-.01-.576-.01s-.527.075-.803.376c-.275.301-1.053 1.028-1.053 2.508s1.078 2.91 1.228 3.111c.15.2 2.126 3.245 5.15 4.542.72.308 1.28.492 1.718.63.722.228 1.38.196 1.895.119.578-.087 1.782-.727 2.033-1.43.25-.702.25-1.304.175-1.43-.075-.125-.276-.2-.578-.35z" />

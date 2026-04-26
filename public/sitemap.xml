@@ -12,15 +12,15 @@
     <!-- Hero / shop front image -->
     <image:image>
       <image:loc>https://ssengico.com/images/hero_background.jpg</image:loc>
-      <image:title>SS Furniture &amp; Fabrication – Premium Steel &amp; Aluminium Work in Piro, Bihar</image:title>
-      <image:caption>Workshop exterior of SS Furniture &amp; Fabrication in Piro, Bihar — serving Ara, Bhojpur, Patna and across Bihar.</image:caption>
+      <image:title>SS Fabrication – Premium Steel &amp; Aluminium Work in Piro, Bihar</image:title>
+      <image:caption>Workshop exterior of SS Fabrication in Piro, Bihar — serving Ara, Bhojpur, Patna and across Bihar.</image:caption>
     </image:image>
 
     <!-- Logo -->
     <image:image>
       <image:loc>https://ssengico.com/images/logo.png</image:loc>
-      <image:title>SS Furniture &amp; Fabrication Logo</image:title>
-      <image:caption>Logo of SS Furniture &amp; Fabrication, a unit of SS Engineering Company</image:caption>
+      <image:title>SS Fabrication Logo</image:title>
+      <image:caption>Logo of SS Fabrication, a unit of SS Engineering Company</image:caption>
     </image:image>
 
     <!-- Gallery images -->

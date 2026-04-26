@@ -21,11 +21,11 @@ export const metadata: Metadata = {
   /* ─── Core Title & Description ─── */
   title: {
     default:
-      "SS Furniture & Fabrication | Best Steel, Iron & Aluminium Work in Piro, Ara, Bihar",
-    template: "%s | SS Furniture & Fabrication – Piro, Bihar",
+      "SS Fabrication | Best Steel, Iron & Aluminium Work in Piro, Ara, Bihar",
+    template: "%s | SS Fabrication – Piro, Bihar",
   },
   description:
-    "SS Furniture & Fabrication (a unit of SS Engineering Company) is the top-rated fabrication workshop in Piro, Ara, Bhojpur, Bihar. We offer custom steel gates, iron grills, aluminium doors, windows, railings, and modular furniture. Serving Patna, Buxar, Sasaram, Rohtas, Gaya & all of Bihar. Call +91 76268 81601.",
+    "SS Fabrication (a unit of SS Engineering Company) is the top-rated fabrication workshop in Piro, Ara, Bhojpur, Bihar. We offer custom steel gates, iron grills, aluminium doors, windows, railings, and modular furniture. Serving Patna, Buxar, Sasaram, Rohtas, Gaya & all of Bihar. Call +91 76268 81601.",
 
   /* ─── Extended Keywords (local Bihar SEO) ─── */
   keywords: [
@@ -34,6 +34,7 @@ export const metadata: Metadata = {
     "Iron Work Bihar",
     "Aluminium Fabrication Bihar",
     "Metal Work Bihar",
+    "SS Fabrication",
     "SS Furniture and Fabrication",
     "SS Engineering Company Bihar",
     "ssengico",
@@ -118,11 +119,11 @@ export const metadata: Metadata = {
   /* ─── Open Graph (for WhatsApp, Facebook shares & Google rich results) ─── */
   openGraph: {
     title:
-      "SS Furniture & Fabrication | Premium Steel, Iron & Aluminium Work in Bihar",
+      "SS Fabrication | Premium Steel, Iron & Aluminium Work in Bihar",
     description:
       "Top-rated fabrication of steel gates, iron grills, aluminium windows, railings, and custom furniture in Piro, Ara, Bihar. 4.9★ on Google. Call +91 76268 81601.",
     url: "https://ssengico.com/",
-    siteName: "SS Furniture & Fabrication",
+    siteName: "SS Fabrication",
     locale: "en_IN",
     type: "website",
     images: [
@@ -130,13 +131,13 @@ export const metadata: Metadata = {
         url: "/images/shopFront.jpg",
         width: 1200,
         height: 630,
-        alt: "SS Furniture & Fabrication – Steel & Aluminium Workshop in Piro, Bihar",
+        alt: "SS Fabrication – Steel & Aluminium Workshop in Piro, Bihar",
       },
       {
         url: "/images/logo.png",
         width: 500,
         height: 500,
-        alt: "SS Furniture & Fabrication Logo",
+        alt: "SS Fabrication Logo",
       },
     ],
   },
@@ -145,7 +146,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "SS Furniture & Fabrication | Best Steel & Aluminium Work in Bihar",
+      "SS Fabrication | Best Steel & Aluminium Work in Bihar",
     description:
       "Premium steel gates, iron grills, aluminium windows & custom furniture in Piro, Ara, Bihar. 4.9★ Google rating.",
     images: ["/images/shopFront.jpg"],
@@ -165,7 +166,7 @@ export const metadata: Metadata = {
   },
 
   /* ─── App Info ─── */
-  applicationName: "SS Furniture & Fabrication",
+  applicationName: "SS Fabrication",
   referrer: "origin-when-cross-origin",
   authors: [{ name: "SS Engineering Company", url: "https://ssengico.com" }],
   creator: "SS Engineering Company",
