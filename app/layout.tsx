@@ -25,39 +25,204 @@ export const metadata: Metadata = {
     template: "%s | SS Fabrication – Piro, Bihar",
   },
   description:
-    "SS Fabrication (a unit of SS Engineering Company) is the top-rated fabrication workshop in Piro, Ara, Bhojpur, Bihar. We offer custom steel gates, iron grills, aluminium doors, windows, railings, and modular furniture. Serving Patna, Buxar, Sasaram, Rohtas, Gaya & all of Bihar. Call +91 76268 81601.",
+    "SS Fabrication (a unit of SS Engineering Company) – top-rated steel, iron & aluminium fabrication workshop in Piro, Ara, Bhojpur, Bihar. Custom steel gate, iron grill, aluminium door-window, SS railing, tin shed, rolling shutter, steel furniture & modular kitchen. लोहे का गेट, ग्रिल, एल्युमीनियम दरवाजा-खिड़की बनवाएं। Serving Patna, Buxar, Sasaram, Rohtas, Gaya & all of Bihar. Call +91 76268 81601.",
 
-  /* ─── Extended Keywords (local Bihar SEO) ─── */
+  /* ─── Extended Keywords (local Bihar SEO — English + Hinglish + Hindi) ─── */
   keywords: [
-    // Core business
-    "Steel Fabrication Bihar",
-    "Iron Work Bihar",
-    "Aluminium Fabrication Bihar",
-    "Metal Work Bihar",
+    // ── Brand ──
     "SS Fabrication",
-    "SS Furniture and Fabrication",
+    "SS Fabrication Bihar",
+    "SS Engineering Company",
     "SS Engineering Company Bihar",
     "ssengico",
-    // Piro & nearby
+
+    // ── Core business (English) ──
+    "Steel Fabrication Bihar",
+    "Iron Fabrication Bihar",
+    "Aluminium Fabrication Bihar",
+    "Metal Fabrication Bihar",
+    "Steel Work Bihar",
+    "Iron Work Bihar",
+    "Aluminium Work Bihar",
+    "Metal Work Bihar",
+    "SS Work Bihar",
+    "Welding Work Bihar",
+    "Fabrication Workshop Bihar",
+
+    // ── Core business (Hinglish — how rural Bihar actually searches) ──
+    "Steel ka Kaam Bihar",
+    "Loha Ka Kaam Bihar",
+    "Lohe ka kaam karne wala",
+    "Aluminium ka kaam Bihar",
+    "Welding ka kaam",
+    "Fabrication ka kaam",
+
+    // ── "Near Me" searches (TOP PRIORITY — highest search volume) ──
+    "welding shop near me",
+    "fabrication shop near me",
+    "steel gate shop near me",
+    "iron grill shop near me",
+    "aluminium door shop near me",
+    "steel furniture shop near me",
+    "gate grill shop near me",
+    "welding ki dukan near me",
+    "grill banane wala near me",
+    "gate banane wala near me",
+    "lohe ka gate near me",
+    "fabrication shop mere paas",
+    "welder near me Bihar",
+
+    // ── Product: Gates ──
+    "Steel Gate Bihar",
+    "Iron Gate Bihar",
+    "SS Gate Bihar",
+    "Main Gate Fabrication Bihar",
+    "Sliding Gate Bihar",
+    "Collapsible Gate Bihar",
+    "Custom Steel Gate Bihar",
+    "Designer Gate Bihar",
+    "lohe ka gate",
+    "steel ka gate",
+    "gate banwana hai",
+    "gate grill Bihar",
+    "designer gate banane wala",
+
+    // ── Product: Grills ──
+    "Iron Grill Bihar",
+    "Window Grill Bihar",
+    "Safety Grill Bihar",
+    "Balcony Grill Bihar",
+    "Iron Window Guard Bihar",
+    "lohe ka jangla",
+    "khidki ka grill",
+    "jangla lagwana",
+    "grill banane wala",
+    "grill ka kaam",
+
+    // ── Product: Doors & Windows ──
+    "Steel Door Bihar",
+    "Aluminium Door Bihar",
+    "Safety Door Bihar",
+    "Aluminium Window Bihar",
+    "Steel Window Bihar",
+    "Window Frame Bihar",
+    "Aluminium Partition Bihar",
+    "steel ka darwaza",
+    "aluminium ka darwaza",
+    "aluminium ki khidki",
+    "khidki ka frame",
+
+    // ── Product: Railings ──
+    "Stainless Steel Railing Bihar",
+    "Staircase Railing Bihar",
+    "Balcony Railing Bihar",
+    "SS Railing Bihar",
+    "Steel Railing Design",
+    "sidi ki railing",
+    "balcony ki railing",
+    "reling lagwana",
+
+    // ── Product: Furniture ──
+    "Steel Bed Bihar",
+    "Steel Almirah Bihar",
+    "Steel Table Chair Bihar",
+    "Steel Rack Bihar",
+    "Custom Furniture Bihar",
+    "Modular Kitchen Bihar",
+    "steel ka palang",
+    "lohe ka palang",
+    "steel ka almirah",
+    "lohe ka table",
+    "rack banwana",
+
+    // ── Product: Jhula ──
+    "Iron Jhula Bihar",
+    "Steel Jhula Bihar",
+    "Garden Swing Steel",
+    "lohe ka jhula",
+    "jhula banwana",
+
+    // ── Product: Shed & Shutter ──
+    "Tin Shed Bihar",
+    "Steel Shed Bihar",
+    "Factory Shed Fabrication Bihar",
+    "Shed Fabrication Bihar",
+    "Rolling Shutter Bihar",
+    "Shop Shutter Bihar",
+    "tin shed lagwana",
+    "shed ka kaam",
+    "dukan ka shutter",
+    "rolling shutter lagwana",
+
+    // ── Product: Chajja / Canopy ──
+    "Door Canopy Bihar",
+    "Steel Chajja Bihar",
+    "chajja lagwana",
+    "darwaze ka chajja",
+
+    // ── Product: Commercial ──
+    "Commercial Interior Bihar",
+    "Shop Interior Fabrication Bihar",
+    "Office Furniture Steel Bihar",
+
+    // ── Design / Inspiration keywords ──
+    "steel gate design",
+    "gate grill design",
+    "gate grill design photo",
+    "latest gate design",
+    "modern window grill design",
+    "staircase railing design",
+    "SS railing design",
+    "balcony grill design",
+    "steel almirah design",
+    "new gate design 2026",
+
+    // ── Trade / Profession terms ──
+    "Best Welder Bihar",
+    "Best Fabrication Workshop Bihar",
+    "Lohara Bihar",
+    "lohar",
+    "mistri",
+    "karigar",
+    "welding wala",
+    "fabrication wala",
+    "steel ka mistri",
+
+    // ── Piro & nearby blocks ──
     "Fabrication Piro Bihar",
     "Steel Gate Piro",
     "Iron Grill Piro Bihar",
     "Aluminium Window Piro",
     "Steel Work Piro",
     "Furniture Piro Bihar",
-    // Ara & Bhojpur
+    "Welding Shop Piro",
+
+    // ── Ara & Bhojpur ──
     "Fabrication Ara Bihar",
     "Steel Gate Ara",
     "Iron Grill Ara Bihar",
     "Aluminium Door Ara Bihar",
     "Furniture Ara Bihar",
+    "Welding Shop Ara",
     "Steel Work Bhojpur",
     "Fabrication Bhojpur Bihar",
-    // Patna
+
+    // ── Bhojpur block towns ──
+    "Steel Work Koilwar",
+    "Fabrication Jagdishpur Bihar",
+    "Steel Gate Shahpur Bihar",
+    "Welding Sandesh Bihar",
+    "Fabrication Tarari Bihar",
+    "Steel Work Agiaon",
+    "Fabrication Udwantnagar",
+    "Steel Gate Charpokhari",
+    "Welding Garhani Bihar",
+    "Fabrication Sahar Bihar",
+
+    // ── District-level cities ──
     "Steel Fabrication Patna",
     "Iron Work Patna Bihar",
     "Aluminium Window Patna",
-    // District-wide
     "Fabrication Buxar Bihar",
     "Steel Work Sasaram",
     "Fabrication Rohtas",
@@ -69,25 +234,26 @@ export const metadata: Metadata = {
     "Fabrication Arwal Bihar",
     "Steel Work Kaimur Bihar",
     "Iron Grill Saran Bihar",
-    // Product keywords
-    "Custom Steel Gate Bihar",
-    "Iron Window Guard Bihar",
-    "Stainless Steel Railing Bihar",
-    "Modular Kitchen Bihar",
-    "Aluminium Partition Bihar",
-    "Commercial Interior Bihar",
-    "Custom Furniture Bihar",
-    "Steel Bed Bihar",
-    "Iron Jhula Bihar",
-    "Balcony Railing Bihar",
-    "Staircase Railing Bihar",
-    "Steel Door Bihar",
-    // General
-    "Best Fabrication Workshop Bihar",
-    "Welding Work Bihar",
-    "Best Welder Bihar",
-    "Lohara Bihar",
-    "Loha Ka Kaam Bihar",
+    "Steel Gate Dumraon",
+    "Fabrication Bhabua",
+    "Welding Dehri Bihar",
+    "Steel Work Bikramganj",
+    "Fabrication Chapra Bihar",
+
+    // ── Hindi / Devanagari script (matches Hindi-typed Google searches) ──
+    "वेल्डिंग शॉप",
+    "स्टील फैब्रिकेशन",
+    "लोहे का गेट",
+    "लोहे का ग्रिल",
+    "एल्युमीनियम का दरवाजा",
+    "स्टील का पलंग",
+    "लोहे का जंगला",
+    "ग्रिल बनाने वाला",
+    "गेट बनाने वाला",
+    "वेल्डिंग की दुकान",
+    "टिन शेड बिहार",
+    "स्टील गेट पीरो",
+    "फैब्रिकेशन आरा बिहार",
   ],
 
   /* ─── Canonical & Alternates ─── */

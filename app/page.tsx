@@ -9,32 +9,32 @@ const SERVICES = [
   {
     icon: "🔧",
     title: "Steel Fabrication",
-    desc: "Custom structural steel work — frames, beams, trusses, and industrial components crafted to exact specifications.",
+    desc: "Custom steel gates (lohe ka gate), structural frames, beams, trusses, tin sheds, rolling shutters and industrial components — crafted to exact specifications.",
   },
   {
     icon: "🔩",
     title: "Iron Works",
-    desc: "Decorative and functional iron grills, gates, window guards, railings, and artistic ironwork for every need.",
+    desc: "Decorative & functional iron grills (jangla), window guards, safety grills, balcony railings, main gates and artistic ironwork for every need.",
   },
   {
     icon: "🏗️",
     title: "Aluminium Fabrication",
-    desc: "Lightweight, durable aluminium doors, windows, partitions, cladding, and custom extruded profiles.",
+    desc: "Lightweight, durable aluminium doors (darwaza), windows (khidki), partitions, cladding, and custom profiles for modern interiors.",
   },
   {
     icon: "🪵",
     title: "Ply & Wood Work",
-    desc: "Premium plywood furniture, modular cabinets, false ceilings, panels, and interior woodwork solutions.",
+    desc: "Premium plywood furniture, modular kitchen cabinets, false ceilings, wall panels, and complete interior woodwork solutions.",
   },
   {
     icon: "🛋️",
     title: "Custom Furniture",
-    desc: "Bespoke furniture fusing metal and wood craftsmanship — built exactly for your space and lifestyle.",
+    desc: "Bespoke steel beds (palang), almirah, tables, chairs, racks, jhula and furniture — built exactly for your space.",
   },
   {
     icon: "🏢",
     title: "Commercial Interiors",
-    desc: "End-to-end fabrication for offices, showrooms, shops, and large-scale commercial establishments.",
+    desc: "End-to-end fabrication for shops (dukan), offices, showrooms, godowns and large-scale commercial establishments.",
   },
 ];
 
@@ -539,7 +539,26 @@ export default function Home() {
               { "@type": "City", "name": "Jehanabad", "containedInPlace": { "@type": "State", "name": "Bihar" } },
               { "@type": "City", "name": "Arwal", "containedInPlace": { "@type": "State", "name": "Bihar" } },
               { "@type": "City", "name": "Kaimur", "containedInPlace": { "@type": "State", "name": "Bihar" } },
-              { "@type": "City", "name": "Saran", "containedInPlace": { "@type": "State", "name": "Bihar" } }
+              { "@type": "City", "name": "Saran", "containedInPlace": { "@type": "State", "name": "Bihar" } },
+              { "@type": "City", "name": "Koilwar", "containedInPlace": { "@type": "State", "name": "Bihar" } },
+              { "@type": "City", "name": "Jagdishpur", "containedInPlace": { "@type": "State", "name": "Bihar" } },
+              { "@type": "City", "name": "Shahpur", "containedInPlace": { "@type": "State", "name": "Bihar" } },
+              { "@type": "City", "name": "Sandesh", "containedInPlace": { "@type": "State", "name": "Bihar" } },
+              { "@type": "City", "name": "Tarari", "containedInPlace": { "@type": "State", "name": "Bihar" } },
+              { "@type": "City", "name": "Agiaon", "containedInPlace": { "@type": "State", "name": "Bihar" } },
+              { "@type": "City", "name": "Udwantnagar", "containedInPlace": { "@type": "State", "name": "Bihar" } },
+              { "@type": "City", "name": "Charpokhari", "containedInPlace": { "@type": "State", "name": "Bihar" } },
+              { "@type": "City", "name": "Garhani", "containedInPlace": { "@type": "State", "name": "Bihar" } },
+              { "@type": "City", "name": "Sahar", "containedInPlace": { "@type": "State", "name": "Bihar" } },
+              { "@type": "City", "name": "Dumraon", "containedInPlace": { "@type": "State", "name": "Bihar" } },
+              { "@type": "City", "name": "Bhabua", "containedInPlace": { "@type": "State", "name": "Bihar" } },
+              { "@type": "City", "name": "Dehri", "containedInPlace": { "@type": "State", "name": "Bihar" } },
+              { "@type": "City", "name": "Bikramganj", "containedInPlace": { "@type": "State", "name": "Bihar" } },
+              { "@type": "City", "name": "Chapra", "containedInPlace": { "@type": "State", "name": "Bihar" } },
+              { "@type": "City", "name": "Danapur", "containedInPlace": { "@type": "State", "name": "Bihar" } },
+              { "@type": "City", "name": "Maner", "containedInPlace": { "@type": "State", "name": "Bihar" } },
+              { "@type": "City", "name": "Bikram", "containedInPlace": { "@type": "State", "name": "Bihar" } },
+              { "@type": "City", "name": "Dinapur", "containedInPlace": { "@type": "State", "name": "Bihar" } }
             ],
             "hasOfferCatalog": {
               "@type": "OfferCatalog",
@@ -550,7 +569,11 @@ export default function Home() {
                 { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Aluminium Fabrication", "description": "Lightweight durable aluminium doors, windows, partitions, cladding in Piro, Ara, Bihar" } },
                 { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ply & Wood Work", "description": "Premium plywood furniture, modular cabinets, false ceilings and interior woodwork in Bihar" } },
                 { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom Furniture", "description": "Bespoke furniture combining metal and wood craftsmanship for Bihar homes and offices" } },
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Commercial Interiors", "description": "End-to-end fabrication for offices, showrooms and commercial establishments in Bihar" } }
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Commercial Interiors", "description": "End-to-end fabrication for offices, showrooms and commercial establishments in Bihar" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tin Shed & Steel Shed", "description": "Factory shed, godown shed, tin shed fabrication and installation in Piro, Ara, Bihar and nearby areas" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Rolling Shutter", "description": "Rolling shutter installation for shops, godowns and commercial buildings in Bihar" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Steel Almirah & Rack", "description": "Custom steel almirah, storage rack, shelf and display units for homes and shops in Bihar" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gate & Grill Design", "description": "Designer steel gate, iron grill, window guard, balcony grill with modern designs in Piro, Ara, Bihar" } }
               ]
             },
             "parentOrganization": {
@@ -583,7 +606,7 @@ export default function Home() {
               {
                 "@type": "Question",
                 "name": "What fabrication services do you offer in Bihar?",
-                "acceptedAnswer": { "@type": "Answer", "text": "We offer steel fabrication, iron grills and gates, aluminium doors and windows, plywood and modular furniture, custom furniture, and complete commercial interior fabrication. All work is done in-house at our Piro, Bihar workshop." }
+                "acceptedAnswer": { "@type": "Answer", "text": "We offer steel fabrication, iron grills and gates, aluminium doors and windows, plywood and modular furniture, custom furniture, tin shed, rolling shutter, steel almirah, and complete commercial interior fabrication. All work is done in-house at our Piro, Bihar workshop." }
               },
               {
                 "@type": "Question",
@@ -598,12 +621,32 @@ export default function Home() {
               {
                 "@type": "Question",
                 "name": "Do you provide services outside Piro, such as in Patna or Ara?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Yes, we serve clients across Bihar including Ara, Patna, Bhojpur, Buxar, Sasaram, Rohtas, Aurangabad, Gaya, Nawada, Nalanda and surrounding districts. Contact us to discuss delivery and installation options." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Yes, we serve clients across Bihar including Ara, Patna, Bhojpur, Buxar, Sasaram, Rohtas, Aurangabad, Gaya, Nawada, Nalanda, Koilwar, Jagdishpur, Shahpur, Sandesh and surrounding districts. Contact us to discuss delivery and installation options." }
               },
               {
                 "@type": "Question",
                 "name": "How do I get a quote for fabrication work?",
                 "acceptedAnswer": { "@type": "Answer", "text": "You can get a free quote by calling +91 76268 81601, sending a WhatsApp message, emailing info@ssengico.com, or filling the contact form on our website at ssengico.com." }
+              },
+              {
+                "@type": "Question",
+                "name": "पीरो में स्टील गेट और ग्रिल कहाँ बनता है? (Where to get steel gate and grill made in Piro?)",
+                "acceptedAnswer": { "@type": "Answer", "text": "पीरो, भोजपुर, बिहार में SS Fabrication (SS Engineering Company) सबसे अच्छी फैब्रिकेशन दुकान है। यहाँ स्टील गेट, लोहे का ग्रिल, एल्युमीनियम दरवाजा-खिड़की, SS रेलिंग, स्टील पलंग, झूला, टिन शेड, रोलिंग शटर सब बनता है। संपर्क करें: +91 76268 81601. SS Fabrication in Piro, Bhojpur, Bihar is the best fabrication workshop for steel gate, iron grill, aluminium door-window, railing, steel bed, jhula, tin shed and rolling shutter. Contact: +91 76268 81601." }
+              },
+              {
+                "@type": "Question",
+                "name": "आरा में best fabrication shop कौन सा है? (Which is the best fabrication shop in Ara?)",
+                "acceptedAnswer": { "@type": "Answer", "text": "आरा, भोजपुर के पास SS Fabrication (पीरो, आरा-सासाराम रोड पर) सबसे भरोसेमंद और किफायती फैब्रिकेशन वर्कशॉप है। Google पर 4.9★ रेटिंग। कस्टम स्टील गेट, आयरन ग्रिल, एल्युमीनियम का काम, फर्नीचर सब यहाँ बनता है। SS Fabrication near Ara on Ara-Sasaram Road is the most trusted and affordable fabrication workshop. 4.9★ Google rating. Custom steel gates, iron grills, aluminium work and furniture." }
+              },
+              {
+                "@type": "Question",
+                "name": "Gate aur grill banwane ka rate kya hai? (What is the cost of getting gate and grill made?)",
+                "acceptedAnswer": { "@type": "Answer", "text": "Gate और grill का rate design, material (SS, MS, iron) और size पर depend करता है। SS Fabrication में competitive factory-direct rates मिलते हैं। Free quotation के लिए call करें +91 76268 81601 या WhatsApp करें। The rate for gate and grill depends on design, material and size. SS Fabrication offers competitive factory-direct rates. Call +91 76268 81601 for a free quote." }
+              },
+              {
+                "@type": "Question",
+                "name": "Bihar mein tin shed ka kaam kahan hota hai? (Where to get tin shed work done in Bihar?)",
+                "acceptedAnswer": { "@type": "Answer", "text": "बिहार में tin shed, factory shed, godown shed बनवाने के लिए SS Fabrication, Piro से संपर्क करें। हम Ara, Patna, Buxar, Sasaram और पूरे बिहार में tin shed fabrication और installation करते हैं। Contact SS Fabrication in Piro for tin shed, factory shed and godown shed fabrication and installation across Bihar. Call +91 76268 81601." }
               }
             ]
           })
@@ -683,7 +726,7 @@ export default function Home() {
             <br /> Meets <span style={{ color: "#ff6b00" }}>Durability</span>
           </h1>
           <p className="hero-p">
-            Top-rated fabrication of steel, iron, aluminium and plywood in Bihar — modern craftsmanship for industrial, commercial and residential spaces across India.
+            Top-rated fabrication of steel gates, iron grills, aluminium doors & windows, SS railings, tin sheds, furniture and modular kitchens in Piro, Ara, Bihar — serving all of Bhojpur and beyond.
           </p>
           <div className="hero-btns">
             <a
@@ -1042,7 +1085,10 @@ export default function Home() {
                 "Piro", "Ara", "Bhojpur", "Patna", "Buxar", "Sasaram",
                 "Rohtas", "Aurangabad", "Gaya", "Nawada", "Nalanda",
                 "Jehanabad", "Arwal", "Kaimur", "Saran", "Jagdishpur",
-                "Koilwar", "Bikram", "Danapur", "Maner"
+                "Koilwar", "Bikram", "Danapur", "Maner", "Shahpur",
+                "Sandesh", "Tarari", "Agiaon", "Udwantnagar",
+                "Charpokhari", "Garhani", "Sahar", "Dumraon",
+                "Bhabua", "Dehri", "Bikramganj", "Chapra", "Dinapur"
               ].map((city) => (
                 <span key={city} className="footer-area-tag">{city}</span>
               ))}
