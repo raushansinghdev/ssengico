@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     template: "%s | SS Fabrication – Piro, Bihar",
   },
   description:
-    "SS Fabrication (a unit of SS Engineering Company) – top-rated steel, iron & aluminium fabrication workshop in Piro, Ara, Bhojpur, Bihar. Custom steel gate, iron grill, aluminium door-window, SS railing, tin shed, rolling shutter, steel furniture & modular kitchen. लोहे का गेट, ग्रिल, एल्युमीनियम दरवाजा-खिड़की बनवाएं। Serving Patna, Buxar, Sasaram, Rohtas, Gaya & all of Bihar. Call +91 76268 81601.",
+    "SS Fabrication (a unit of SS Engineering Company) – top-rated steel, iron & aluminium fabrication workshop in Piro, Ara, Bhojpur, Bihar. Custom steel gate, iron grill, aluminium door-window, SS railing, tin shed, rolling shutter, steel furniture & Plywood Works. लोहे का गेट, ग्रिल, एल्युमीनियम दरवाजा-खिड़की बनवाएं। Serving Patna, Buxar, Sasaram, Rohtas, Gaya & all of Bihar. Call +91 76268 81601.",
 
   /* ─── Extended Keywords (local Bihar SEO — English + Hinglish + Hindi) ─── */
   keywords: [
@@ -128,7 +128,7 @@ export const metadata: Metadata = {
     "Steel Table Chair Bihar",
     "Steel Rack Bihar",
     "Custom Furniture Bihar",
-    "Modular Kitchen Bihar",
+    "Plywood Works Bihar",
     "steel ka palang",
     "lohe ka palang",
     "steel ka almirah",

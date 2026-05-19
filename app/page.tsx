@@ -69,6 +69,7 @@ const WHY = [
 const CONTACT_INFO = [
   { ico: "📞", label: "Phone", val: "+91 76268 81601" },
   { ico: "📧", label: "Email", val: "info@ssengico.com" },
+  { ico: "🏢", label: "GSTIN", val: "10CZZPS3319G1Z2" },
 ];
 
 const navItems = ["Home", "About", "Services", "Gallery", "Contact"];
@@ -490,6 +491,7 @@ export default function Home() {
             "url": "https://ssengico.com",
             "telephone": "+917626881601",
             "email": "info@ssengico.com",
+            "taxID": "10CZZPS3319G1Z2",
             "priceRange": "$$",
             "currenciesAccepted": "INR",
             "paymentAccepted": "Cash, Bank Transfer, UPI",
@@ -726,7 +728,7 @@ export default function Home() {
             <br /> Meets <span style={{ color: "#ff6b00" }}>Durability</span>
           </h1>
           <p className="hero-p">
-            Top-rated fabrication of steel gates, iron grills, aluminium doors & windows, SS railings, tin sheds, furniture and modular kitchens in Piro, Ara, Bihar — serving all of Bhojpur and beyond.
+            Top-rated fabrication of steel gates, iron grills, aluminium doors & windows, SS railings, tin sheds, furniture and Plywood Works in Piro, Ara, Bihar — serving all of Bhojpur and beyond.
           </p>
           <div className="hero-btns">
             <a
@@ -1096,6 +1098,7 @@ export default function Home() {
           </div>
           <div className="footer-bottom">
             <div className="footer-copy">© 2026 <span>SS Engineering Company</span>. All rights reserved. | <a href="https://ssengico.com" style={{ color: "#ff6b00", textDecoration: "none" }}>ssengico.com</a></div>
+            <div className="footer-gst">GSTIN: 10CZZPS3319G1Z2</div>
           </div>
         </div>
       </footer>
